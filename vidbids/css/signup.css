@@ -1,0 +1,334 @@
+@font-face{
+	font-family:vidbid;
+	src: url(font/xirod.ttf);
+}
+body, html{
+	margin:0;
+	padding:0;
+	font-family:vidbid;
+	background:#022233;
+}
+.grad{
+	float:left;
+	width:100%;
+	min-height:100% ;
+	background: #022233; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* Standard syntax */
+}
+*{
+	box-sizing:border-box;
+}
+.header{
+	margin-bottom:30px;
+	position:relative;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+.col-2 input{
+    font-size: 1.5em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 3px;
+}
+.button-container, .col-2 input{
+	width:70%;
+	margin-left:15%;
+	margin-top:20px;
+	margin-bottom:10px;
+	position:relative;
+}
+.button-container .button{
+	width: calc(100%);
+    height: calc(4.3em - 35px);
+    border: none;
+    background: #2D7996;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+    cursor: pointer;
+    position: relative;
+    z-index: 255;
+}
+
+.button-container div p {
+	position: absolute;
+    top: -10px;
+    left: 0;
+    text-align: center;
+    width: 88%;
+    color: white;
+}
+.clicker{
+	background:white !important;
+}
+.button-container .clicker {
+	width: calc(100% - 1px);
+    height: calc(4.3em - 36px);
+    border: none;
+    background: white !important;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+.clicked .clicker{
+	top:5px;
+	left:4px;
+}
+
+.col-8 h1 {
+	text-align: center;
+}
+.auction-container{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-top:10px;
+    margin-top:20px;
+}
+.img-container{
+	width:100%;
+	height:10em;
+}
+.img-container img{
+	width:100%;
+	height:100%;
+}
+.title-container{
+	background:black;
+}
+.title-container p {
+	font-family:arial;
+	text-align:center;
+	color:white;
+	margin:0;
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+.info-container #current_price{
+	width:100%;
+	font-family:arial;
+	text-align:center;
+	font-size:2em;
+	color:white;
+	margin:0;
+}
+.cur-bid{
+	text-align:center;
+	width:100%;
+	color:white;
+	margin:0;
+}
+.info-container #time_left{
+	text-align:center;
+	width:100%;
+	color:#DB6300;
+	margin:0;	
+	font-family:arial;
+	font-style:italic;
+	font-weight:bold;
+	margin-top:10px;
+}
+.info-container{
+	border:1px solid white;
+	background: #022233; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* Standard syntax */
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#notifications{
+	width: 16%;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    bottom: 1;
+}
+
+#noti_container{
+	position: absolute;
+	bottom: 0;
+}
+
+.notify > h1 {
+	font-family: vidbid;
+}
+
+.notify > p{
+	font-family: arial;
+}
+
+.notify > h1, .notify > p{
+	text-align: center;
+	font-size: 85%;
+	margin: 2;
+	padding: 2;
+} 
+
+#noti_container, .notify{
+	width: 95%;
+}
+
+#product{
+	color: grey;
+}
+
+.notify{
+	border: 3px solid #2d7796;
+	padding: 5px;
+	margin: 10px;
+		background: #022233; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* Standard syntax */
+}
+.win h1 {
+	color:#41AA39;
+}
+.lose h1 {
+	color: red;
+}
+.win #time {
+	color:white;
+}
+
+.lose #time{
+	color:#DB6300;
+}
+.col-8{
+	background: #022233; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)); /* Standard syntax */
+    height:100%;
+}
+.info{
+	position:absolute;
+	right:0;
+	top:0;
+	color:white;
+	width:25%;
+}
+.right-info{
+	float:left;
+	width:50%;
+}
+.left-info{
+	float:left;
+	width:50%;
+}
+#logout{
+	color:2d7996;
+}
+#coins{
+	color:#00aeef;
+}
+#buy-coins{
+	color:#41AA39;
+}
+
+.left-info p, .right-info p{
+	margin:0;
+}
+.left-info, .right-info{
+	margin-top:20px;
+}
+
+label{
+	text-align: right;
+	display: inline-block;
+	width:200px;
+	color: #2d7996;
+	font-size: 25;
+}
+
+input{
+	width:50%;
+	margin-left: 3%;
+	width: 60%;
+    margin-left: 3%;
+    margin-top: 40px;
+    height: 4vw;
+    font-size: x-large;
+}
+
+#form{
+	width:50%;
+	margin-left: 25%;
+}
+
+button {
+	margin-top: 55px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: blue;
+    font-size: 25;
+    font-family: vidbid;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+    color: white;
+   	background: #022233; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* Standard syntax */
+    cursor: pointer;
+}
+
+#bottom_text > p{
+	display: inline;
+    text-align: center;
+    color: white;
+    font-size:25;
+}
+
+#bottom_text{
+	margin-top: 40px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#bottom_text > p:nth-child(1), #bottom_text > p:nth-child(4) {
+	font-family: arial;
+}
+
+#bottom_text > p:nth-child(2) {
+	color:#2d7996;
+}
+
+
+#confirm_password, #confirm_email{
+	vertical-align: bottom;
+}
+
+#username_container {
+	text-align: center;
+}

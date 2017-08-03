@@ -1,0 +1,124 @@
+.col-8 h1 {
+	text-align: center;
+}
+.auction-container{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-top:10px;
+    margin-top:20px;
+    opacity:0.9;
+    position: relative;
+}
+.auction-container:hover{
+	opacity:1;	
+}
+.img-container{
+	width:100%;
+	height:10em;
+	z-index:100;
+}
+.img-container img{
+	width:100%;
+	height:100%;
+}
+.title-container{
+	background:black;
+	z-index:200;
+}
+.title-container p {
+	font-family:arial;
+	text-align:center;
+	color:white;
+	margin:0;
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+.info-container #current_price{
+	width:100%;
+	font-family:arial;
+	text-align:center;
+	font-size:2em;
+	color:white;
+	margin:0;
+}
+.cur-bid{
+	text-align:center;
+	width:100%;
+	color:white;
+	margin:0;
+}
+.info-container #time_left{
+	text-align:center;
+	width:100%;
+	color:#DB6300;
+	margin:0;	
+	font-family:arial;
+	font-style:italic;
+	font-weight:bold;
+	margin-top:5px;
+}
+.info-container{
+	border:1px solid white;
+	background: #022233; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* Standard syntax */
+    padding-top:10px;
+    padding-bottom:10px;
+    z-index:200;
+}
+
+.act-container button{
+	margin:0;
+	width:50%;
+	max-width:50%;
+	min-width:50%;
+	float:left;
+	background:rgba(0, 0, 0, 0.6);
+	border:none;
+	color:#f4ffdc;
+	font-family:vidbid;
+	font-weight:bold;
+
+}
+.act-container{
+	position: absolute;
+    top: 43px;
+    width:100%;
+    height: 43px;
+}
+.cost-bid{
+	text-align: center;
+    width: 100%;
+    color: #00aeef;
+    margin: 0;
+    font-size: 12px;
+    font-family:arial;
+    font-weight:bold;
+}
+button:focus {outline:0;}
+.ani-container{
+	height:43px;
+	position:absolute;
+	overflow:hidden;
+	top:7.95em;
+    width: calc(100% - 40px);
+}
+#bid-button{
+	border-right:1px solid grey;
+}
+.other-head{
+	margin-top:2em;
+}
+.info-container .time_left{
+	text-align:center;
+	width:100%;
+	color:#DB6300;
+	margin:0;	
+	font-family:arial;
+	font-style:italic;
+	font-weight:bold;
+	margin-top:5px;
+}
